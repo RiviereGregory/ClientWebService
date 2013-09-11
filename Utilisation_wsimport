@@ -1,0 +1,9 @@
+on va dans le repertoire du projet java que l'on a crée dans eclipse
+cd Workspace/ClientWebService/
+
+puis on fait wsimport sur le wsdl que l'on veut utiliser
+wsimport -d src -p fr.treeptik.clientservice.wsimport -Xnocompile http://localhost:8080/template-JSF-CDI-EJB/ManagerWebSevice?wsdl
+
+-d le dossier de destination
+-p le nom du package que l'on veut mettre les fichiers généré par jaxb
+-Xnocompile pour avoir les fichiers .java et pas .class
